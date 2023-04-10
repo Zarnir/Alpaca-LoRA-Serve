@@ -11,6 +11,8 @@ def initialize_globals(args):
     global gen_config, gen_config_summarization, constraints_config
     global model_type, batch_enabled
     
+    print('URL ********: ', args.base_url)
+
     model_type = "alpaca"
     batch_enabled = True if args.batch_size > 1 else False    
 
